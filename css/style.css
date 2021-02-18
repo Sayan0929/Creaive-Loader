@@ -38,6 +38,7 @@ section {
     width: 100px;
     height: 100px;
     position: relative;
+    animation: change 1.5s linear infinite;
 }
 
 div{
@@ -62,8 +63,7 @@ div.active {
 
 @keyframes rotate {
     0%{
-        transform: rotate(0deg);
-        filter: hue-rotate(0deg);
+        transform: rotate(0);
     }
 
     50%{
@@ -72,6 +72,15 @@ div.active {
 
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes change {
+    from{
+        filter: hue-rotate(0);
+    }
+
+    to {
         filter: hue-rotate(360deg);
     }
 }
