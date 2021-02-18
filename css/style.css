@@ -67,11 +67,11 @@ div.active {
     }
 
     50%{
-        transform: scale(1.5) rotate(-180deg);
+        transform: scale(1.5) rotate(180deg);
     }
 
     100%{
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
         filter: hue-rotate(360deg);
     }
 }
